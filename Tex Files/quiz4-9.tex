@@ -1,0 +1,68 @@
+\documentclass{book}
+\usepackage{hyperref}
+
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{xepersian}
+
+\settextfont{B Zar}
+
+\title{آموزش لاتک}
+\author{پویا آقاحسینی}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\chapter{اموزش لاتک}\label{ch1}
+	\section{جدول و تصاویر}
+	چدول 
+	\ref{جدول اول}
+	وشکل   را رسم کنید.
+	\begin{table}[h!]
+		\caption{جدول آزمایشی}
+		\label{جدول اول}
+		\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multirow{2}{*}{ردیف}&
+				\multicolumn{2}{|c|}
+				{مشخصات فردی}
+				\\ \cline{2-3}
+				&  نام
+				&نام خانوادگی
+				\\
+				\hline
+				\multicolumn{2}{|c||}
+				{ازمایش}&
+				تست
+				\\ 
+				\hline
+			\end{tabular}
+		\end{center}
+	\end{table}
+برای وارد کردن يک واژه از دستور
+	\begin{latin}
+		glspl
+		\end{latin}
+	بايد استفاده نمود. مثل واژه متغيرهای تصادفی
+	 \footnote{\label{f1}\lr{Random Variable}}
+	  که اگر در فايل تک آن نگاه کنید، مشاهده می کنید که برای وارد کردن واژه متغیر های تصادفی از دستور 
+	  \lr{glspl}
+	  استفاده شده است. در ضمن در اولين استفاده از اين واژه، معادل انگليسی آن نيز پاورقی خورده است. و اکنون واژه
+	   	 \footnote{\label{f2}\lr{Optimization}}
+	    را تعريف می کنيم.
+	    از اخصارات ، اختصارات 
+	    \lr{BAN\footnote{\label{f3}\lr{Body Area Network}}}
+	    و
+	    \lr{CDMA\footnote{\label{f4}\lr{Code Division Multiplexing Access}}}
+	    را وارد می کنيم. برای بار اول پاورقی می خورد. اما برای
+	    بار دوم پاورقي زده نمي شود. اگر واژه و يا اختصاري را در متن با دستورات
+	    \lr{gls}
+	    و
+	    \lr{glspl}
+	    وارد نکنید ، واژه نه
+	    در متن ظاهر شده و نه در واژ هنامه ها وارد می شود.
+\end{document}
