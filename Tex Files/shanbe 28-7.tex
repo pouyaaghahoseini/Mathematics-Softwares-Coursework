@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\makeindex
+\usepackage{rotating}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{xepersian}
+
+\settextfont{B Zar}
+\title{آموزش لاتک}
+\author{نگارنده}
+\date{28 مهر 1397}
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\listoftables
+		\begin{table}[h]
+			\caption{لیست دانشجویان}
+			\begin{center}
+
+	\begin{tabular}{|c|c|c|}
+		\hline
+		نام & نام خانوادگی & رشته  \\ \hline
+		پویا & آقاحسیینی &  9513006\\ \hline
+		حسن & امیرحسینی&  9513007\\ \hline
+		رضا & رضایی & 9513015\\ \hline
+		احسان & کریمی & 9513000 \\ \hline
+
+	\end{tabular}
+\end{center}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multirow{2}{*}{سیاره} & \multicolumn{2}{|c|}{فاصله از خورشید} \\ \cline{2-3}
+		& کمترین
+		& بیشترین \\ \hline
+مارس & 468 & 694 \\ \hline
+	\multicolumn{2}{c}{}
+	
+	\end{tabular}
+
+			\end{center}
+				\end{table}
+\includegraphics[height=50pt]{git.jpg}
+\begin{sidewaystable}[h]
+	\caption{لیست دانشجویان}
+	\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		نام & نام خانوادگی & رشته  \\ \hline
+		پویا & آقاحسیینی &  9513006\\ \hline
+		حسن & امیرحسینی&  9513007\\ \hline
+		رضا & رضایی & 9513015\\ \hline
+		احسان & کریمی & 9513000 \\ \hline
+		
+	\end{tabular}
+	\end{center}
+\end{sidewaystable}
+\begin{figure}
+\caption{توضيحات مربوط به شکل} 
+		\begin{center}
+\includegraphics[height=50pt][angle=30]{git.jpg}
+	\end{center}
+\end{figure}
+\printindex
+\end{document}

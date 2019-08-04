@@ -1,0 +1,147 @@
+\documentclass[openany,12pt]{book}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\makeindex
+\usepackage{rotating}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{xepersian}
+\settextfont{B Zar}
+\title{آموزش لاتک}
+\author{نگارنده}
+\date{28 مهر 1397}
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\chapter{آموزش لاتک}
+	\section{جدول و تصاویر}
+					جدول 
+					\index{جدول}
+	\ref{t1}
+	و شکل 
+%	\ref{f2}
+	را رسم کنید.
+	
+	\begin{table}[h]
+		\caption{جدول آزمایشی}
+		\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multirow{2}{*}{ردیف} &  \multicolumn{2}{c|}{مشخصات فردی} \\
+				\cline{2-3}
+				& نام & نام  خانوادگی \\
+				\hline
+				\multicolumn{2}{|c}{آزمایش} &    تست  \\
+				\hline
+			\end{tabular}\label{t1}
+		\end{center}	
+	\end{table}
+
+	کد زیر را بنویسید.
+	
+	\begin{latin}
+		\begin{verbatim}
+		function[c,ceq]=confun(x)
+		global n
+		global d
+		c=[];
+		for k=1 : n+1
+		ceq (k=sum(d(:,k)*x(1:n+1))-x(k)*x(n+1+k)+x(k)+(x(n+1+k)^2);
+		end
+		ceq (n+2)=x(1)-1;
+		end
+		\end{verbatim}
+	\end{latin}
+\fbox{
+	\begin{minipage}[c]{10cm}
+	راهنمایی:
+	\begin{itemize}
+		\item 
+		اين فايل را با رده نوشتاری زير توليد کنيد:
+	\end{itemize}
+\begin{latin}
+	$\backslash$documentclass[openany,12pt]{book}
+\end{latin}
+\begin{itemize}
+	\item 
+	این متن راهنما را در محیط
+\end{itemize}
+\begin{latin}
+$\backslash$fbox\{
+
+
+$\backslash$begin{minipage}[c]{10cm}
+\end{latin}
+متن راهنما
+\begin{latin}
+		$\backslash$end{minipage}
+\}
+		\end{latin}
+
+\begin{itemize}
+	\item 
+	از 
+	\lr{pdf4}
+	یا کتاب های 
+	\ref{b1}
+	و
+	\ref{b2}
+	برای راهنمایی استفاده کنید.
+\end{itemize}
+\end{minipage}
+}
+
+\begin{figure}
+	\caption{
+		شکل
+		\ref{p1}
+		شکل
+		\ref{p2}
+		شکل
+		\ref{p3}
+		شکل
+		\ref{p4}
+	} 
+	\begin{center}
+		
+		\begin{figure}[options]
+		\centering
+		\subfigure[ }[توضيح زير عکس اول
+	\includegraphics[options]{image 1}
+\label{ {{برچسب عکس اول
+		\hspace*{20mm}
+		
+		
+		\includegraphics[height=50pt, angle=-30]{git.jpg}
+		\caption{چیز}
+		\label{p1}
+		\includegraphics[height=50pt, angle=50]{git.jpg}
+		\caption{چیز}
+		\label{p2}
+		\includegraphics[height=50pt, angle=150]{git.jpg}
+		\caption{چیز}
+		\label{p3}
+		
+		\includegraphics[height=50pt, angle=230]{git.jpg}
+		\caption{چیز}
+		\label{p4}
+	\end{center}
+\end{figure}
+\begin{thebibliography}{9}
+\bibitem{citekey1}
+مشخصات منبع فارسی اول
+.
+\begin{LTRbibitems}
+\resetlatinfont
+\bibitem{citekey2}
+\lr{reference 2}
+.
+\end{LTRbibitems}
+\end{thebibliography}
+
+\printindex
+
+\end{document}

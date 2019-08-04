@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\usepackage{multicol}
+\usepackage{bidipoem}
+\usepackage{shapepar}
+\usepackage{xepersian}
+\settextfont{B Zar}
+\defpersianfont\Nas[Scale=1.5,Color=red]{IranNastaliq}
+\defpersianfont\green[Color=green]{B Zar}
+\title{\Nas آموزش لاتک}
+\author{\green\underline{نویسنده}}
+\date{\today}
+\begin{document}
+	\maketitle
+	\section{مقدمه}\label{a}
+	در بخش
+	\ref{a}
+	 داریم:
+	 \begin{itemize}
+	 	\item
+	 	فهرست های به هم ریخته
+	 	\begin{enumerate}
+	 		\item اول
+	 		\item two\LTRfootnote{دو}
+	 	\end{enumerate}
+	 	
+	 	\item
+	 	فهرست های شمارشی
+	 	\begin{description}
+	 		\item[اول]	 		
+ 		 	\end{description}
+
+	 	فهرست های توضیحی
+	 	\footnote{2}
+	 	\item
+	 	فهرست های درون خطی
+	 \end{itemize}
+ 	\begin{traditionalpoem}
+
+ بی تو مهتاب شبی از آن کوچه گذشتم!
+&&
+ 	 همه تن چشم شدم خيره به دنبال تو گشتم.
+ \end{traditionalpoem}
+	\shapepar{\starshape}
+		بی تو مهتاب شبی از آن کوچه گذشتم! همه تن چشم شدم خيره به دنبال تو گشتم.
+	
+ 
+\end{document}

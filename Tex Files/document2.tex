@@ -1,0 +1,44 @@
+\documentclass[12pts]{book}
+\usepackage{xcolor}
+\usepackage{xepersian}
+\settextfont{B Zar}
+\title{ تنظیمات نیم فاصله در لاتک}
+\author{پویا-احسان}
+\date{8 مهر 1397}
+
+\begin{document}
+	\maketitle
+	\section{بخش 1}
+	\subsection{مرحله 1}
+	\textcolor{red}{متمن}
+	
+
+	ويرايشگر
+\lr{Texstudio}	
+	خود را باز کنيد و مسير زير را طی کنيد:
+\lr{Macros —> Edit Macros}
+\subsection{مرحله 2}
+		
+	
+	  با کليک روی
+	  \lr{Add}
+	  در بخشی که در پنجره سمت چپ ايجاد می شود مقادير زير را وارد کنيد:
+	  \newline
+	 در زير قسمت
+	 \lr{\Large Name}
+	مقدار 
+\lr{\Large ZWNJ(Half-Space)}	
+	را وارد کنيد و اينتر را بزنيد.
+\subsection{مرحله3}
+	مقدار
+\lr{\Large Abbrev}	 
+	  در زير قسمت
+\lr{ZWNJ}	
+	پنجره سمت راست را به شکل زير تکميل کنيد و
+\lr{OK}	
+	را بزنيد. 
+	\newline
+	به کوچک و بزرگ بودن حروف دقت کنید.
+
+\lr{editor.write("$\backslash$u200C")}	
+\end{document}
